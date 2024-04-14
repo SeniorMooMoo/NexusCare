@@ -1,5 +1,6 @@
 .circular-button {
   position: fixed;
+  top: 50px;
   inset-block-end: 30px; /* 20px from the bottom */
   inset-inline-end: 30px; /* 20px from the right */
   inline-size: 100px; /* Diameter of the circle */
