@@ -10,11 +10,7 @@ import Image from "next/image";
     return (
         <div className="h-full p-20 flex flex-col items-center justify-center">
             <div className="relative h-72 w-72">
-                <Image
-                alt="Mascot"
-                fill
-                src="/mascot.png"
-                />
+               
             </div>
             <p className="text-muted-foreground text-sm text-center">
                 {label}
