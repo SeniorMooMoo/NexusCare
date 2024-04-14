@@ -1,15 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 .circular-button {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 50px;
-  inset-block-end: 30px; /* 20px from the bottom */
-  inset-inline-end: 30px; /* 20px from the right */
-  inline-size: 100px; /* Diameter of the circle */
-  block-size: 100px; /* Diameter of the circle */
+  right: 50px;
   background-color: #f0a804;
   border: none; /* No border */
   color: white; /* White text */
-  padding: 20px 0; /* Padding to help make it circular, adjusts text alignment */
-  border-radius: 50%; /* Makes the button circular */
+  /* border-radius: 50%; Makes the button circular */
   text-align: center; /* Center the text inside the button */
   text-decoration: none;
   display: inline-block;
@@ -18,11 +19,10 @@
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.6ms; /* Smooth transition for hover effect */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow for 3D effect */
+  transition: all 0.3s ease;
 }
 .circular-button:hover {
   background-color: #d89004; /* Darker shade of button color on hover */
-  inline-size: 105px; /* Diameter of the circle */
-  block-size: 105px; /* Diameter of the circle */
 }
 
 .conversation-container {
@@ -41,6 +41,21 @@
   top: 0;
   background-color: white;
   left: 0;
+  overflow-y: scroll;
+}
+
+.closeButton {
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgb(58, 58, 58);
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  transform: scale(1.2);
 }
 
 @keyframes slideInRight {
