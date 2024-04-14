@@ -1,28 +1,27 @@
-
-  .circular-button {
-    position: fixed;
-    inset-block-end: 30px;        /* 20px from the bottom */
-    inset-inline-end: 30px;         /* 20px from the right */
-    inline-size: 100px;         /* Diameter of the circle */
-    block-size: 100px;        /* Diameter of the circle */
-    background-color: #f0a804;
-    border: none;         /* No border */
-    color: white;         /* White text */
-    padding: 20px 0;      /* Padding to help make it circular, adjusts text alignment */
-    border-radius: 50%;   /* Makes the button circular */
-    text-align: center;   /* Center the text inside the button */
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;      /* Button text size */
-    margin: 4px 2px;
-    cursor: pointer;      /* Pointer cursor on hover */
-    transition: background-color 0.6ms; /* Smooth transition for hover effect */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Shadow for 3D effect */
+.circular-button {
+  position: fixed;
+  inset-block-end: 30px; /* 20px from the bottom */
+  inset-inline-end: 30px; /* 20px from the right */
+  inline-size: 100px; /* Diameter of the circle */
+  block-size: 100px; /* Diameter of the circle */
+  background-color: #f0a804;
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 20px 0; /* Padding to help make it circular, adjusts text alignment */
+  border-radius: 50%; /* Makes the button circular */
+  text-align: center; /* Center the text inside the button */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Button text size */
+  margin: 4px 2px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.6ms; /* Smooth transition for hover effect */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow for 3D effect */
 }
 .circular-button:hover {
-    background-color: #d89004; /* Darker shade of button color on hover */
-    inline-size: 105px;         /* Diameter of the circle */
-    block-size: 105px;        /* Diameter of the circle */
+  background-color: #d89004; /* Darker shade of button color on hover */
+  inline-size: 105px; /* Diameter of the circle */
+  block-size: 105px; /* Diameter of the circle */
 }
 
 .conversation-container {
@@ -36,6 +35,11 @@
   animation-name: slideInRight; /* Name of the animation */
   animation-duration: 1s; /* Duration of the animation */
   animation-timing-function: ease-out; /* Timing function */
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  left: 0;
 }
 
 @keyframes slideInRight {
