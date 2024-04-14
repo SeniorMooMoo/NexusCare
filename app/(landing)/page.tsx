@@ -41,9 +41,16 @@ const DashboardPage = () => {
   }, []);
 
   const [ConversationVisible, setConversationVisible] = useState(false);
+  const [ShowButton, setShowButton] = useState(true);
 
   const showConversation = () => {
-    setConversationVisible(!ConversationVisible);
+    setConversationVisible(true);
+    setShowButton(false);
+  };
+
+  const hideConversation = () => {
+    setConversationVisible(false);
+    setShowButton(true);
   };
 
   const router = useRouter();
@@ -52,14 +59,18 @@ const DashboardPage = () => {
       <div className={styles.container}>
         <Image
           className={styles.backgroundImage}
-          src={"/imgBackground.jpg"}
+          src={
+            "https://media.discordapp.net/attachments/1228924427274686536/1228983876110651443/imgBackground.png?ex=662e076d&is=661b926d&hm=cf09e99a49ccae7afbfbcc37ce7f22033c58620a12ac9ac832501845a5cb4791&format=webp&quality=lossless&width=550&height=231&"
+          }
           width={1920}
           height={941}
           alt="Dashboard Image"
         />
-        <Button className={`circular-button`} onClick={showConversation}>
-          Click Me
-        </Button>
+        {ShowButton && (
+          <Button className={`circular-button`} onClick={showConversation}>
+            Nexus AI
+          </Button>
+        )}
         {/* this is my button*/}
       </div>
       {/* Include the Calendly badge widget */}
@@ -68,7 +79,7 @@ const DashboardPage = () => {
         rel="stylesheet"
       />
 
-      {ConversationVisible && <ConversationPage />}
+      {ConversationVisible && <ConversationPage onClose={hideConversation} />}
     </div>
   );
 };
