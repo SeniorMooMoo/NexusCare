@@ -60,7 +60,7 @@ const DashboardPage = () => {
         <Image
           className={styles.backgroundImage}
           src={
-            "https://media.discordapp.net/attachments/1225883388230111392/1228976883316822066/imgBackground.jpg?ex=662e00ea&is=661b8bea&hm=117f79485b8f6d8f6606a531be66c192c067b00271c6071a7a11a050d4010d0e&=&format=webp&width=1440&height=608"
+            "https://media.discordapp.net/attachments/1228924427274686536/1228983876110651443/imgBackground.png?ex=662e076d&is=661b926d&hm=cf09e99a49ccae7afbfbcc37ce7f22033c58620a12ac9ac832501845a5cb4791&format=webp&quality=lossless&width=550&height=231&"
           }
           width={1920}
           height={941}
@@ -68,7 +68,7 @@ const DashboardPage = () => {
         />
         {ShowButton && (
           <Button className={`circular-button`} onClick={showConversation}>
-            Click Me
+            Nexus AI
           </Button>
         )}
         {/* this is my button*/}

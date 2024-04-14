@@ -70,12 +70,10 @@ const ConversationPage: React.FC<ConversationPageProps> = ({ onClose }) => {
         ✖
       </div>
       <div>
-        <Heading
-          title="Talk to Your Doctors"
-          description="get help instantly"
-          icon={MessageSquare}
-          iconColor="text-violet-500"
-          bgColor="bg-violet-500/10"
+        <Heading 
+          title="Nexus Care"
+          description="AI Geriatrics Solutions"
+          
         />
         <div className="px-4 lg:px-8">
           <div>
@@ -103,7 +101,7 @@ const ConversationPage: React.FC<ConversationPageProps> = ({ onClose }) => {
                         <Input
                           className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                           disabled={isLoading}
-                          placeholder="How are you feeling today?"
+                          placeholder="Ask me a question."
                           {...field}
                         />
                       </FormControl>

@@ -7,7 +7,7 @@
   align-items: center;
   top: 50px;
   right: 50px;
-  background-color: #f0a804;
+  background-color: #a156b6;
   border: none; /* No border */
   color: white; /* White text */
   /* border-radius: 50%; Makes the button circular */
@@ -22,13 +22,14 @@
   transition: all 0.3s ease;
 }
 .circular-button:hover {
-  background-color: #d89004; /* Darker shade of button color on hover */
+  background-color: #909bae; /* Darker shade of button color on hover */
+  transform: scale(1.05); 
 }
 
 .conversation-container {
   width: 50vw; /* 50% of the viewport width */
   height: 100vh; /* 100% of the viewport height */
-  border: 4px solid #ccc; /* Adjust border width and color as needed */
+  border: 4px solid #909bae; /* Adjust border width and color as needed */
   padding: 10px; /* Adjust padding as needed */
   display: flex; /* Use flexbox */
   flex-direction: column; /* Arrange children vertically */
@@ -40,7 +41,7 @@
   position: absolute;
   top: 0;
   background-color: white;
-  left: 0;
+  right: 0;
   overflow-y: scroll;
 }
 
