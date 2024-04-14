@@ -52,7 +52,7 @@ const DashboardPage = () => {
       <div className={styles.container}>
         <Image
           className={styles.backgroundImage}
-          src={"/imgBackground.jpg"}
+          src={"/imgBackground.png"}
           width={1920}
           height={941}
           alt="Dashboard Image"
