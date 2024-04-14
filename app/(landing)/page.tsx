@@ -43,7 +43,7 @@ const DashboardPage = () => {
   const [ConversationVisible, setConversationVisible] = useState(false);
 
   const showConversation = () => {
-    setConversationVisible(true);
+    setConversationVisible(!ConversationVisible);
   };
 
   const router = useRouter();
@@ -57,10 +57,7 @@ const DashboardPage = () => {
           height={941}
           alt="Dashboard Image"
         />
-        <Button
-          className={`circular-button ${styles.circularButton}`}
-          onClick={showConversation}
-        >
+        <Button className={`circular-button`} onClick={showConversation}>
           Click Me
         </Button>
         {/* this is my button*/}
